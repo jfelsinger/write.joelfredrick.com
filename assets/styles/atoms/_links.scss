@@ -1,0 +1,71 @@
+/*-------------------------------------*\
+    LINKS
+\*-------------------------------------*/
+
+/**
+ * Links 
+ * 
+ * 
+ * 
+ **
+ * Base
+ * Isotopes
+ * Implementation
+ * 
+    
+ * 
+ */ 
+ 
+%link {
+    color: $c-blue--dark;
+    text-decoration: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: $c-blue--bright;
+        text-decoration: underline;
+        outline: none;
+    }
+
+    &::selection {
+        color: $c-selection;
+    }
+}
+
+
+
+
+
+/*-------------------------------------*\
+    Isotopes
+\*-------------------------------------*/
+
+%link--plain {
+    @extend %inherit-color !optional;
+}
+
+%plain-links {
+    a { @extend %link--plain !optional; }
+}
+
+
+
+
+
+/*-------------------------------------*\
+    Implementation
+\*-------------------------------------*/
+
+// I debate whether links should, by default, be styled as links
+// at this point in time I say no.
+a, .link { @extend %link !optional; }
+
+/*a*/.link--plain { @extend %link--plain !optional; }
+
+.plain-links { @extend %plain-links !optional; }
+ 
+
+
+
+

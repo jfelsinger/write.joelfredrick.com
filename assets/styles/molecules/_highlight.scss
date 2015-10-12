@@ -1,0 +1,36 @@
+/*-------------------------------------*\
+    HIGHLIGHT
+\*-------------------------------------*/
+
+/**
+ * Highlight 
+ * 
+ * 
+ * 
+    
+ * 
+ */ 
+ 
+
+%highlight {
+    font-family: $f-inconsolata;
+    margin-bottom: unit();
+    padding: 1em unit();
+    border: 1px solid $c-border--dark;
+    background: $c-border;
+    clear: both;
+
+    ::selection {
+        background: #bbf1ff;
+    }
+
+    .c1::selection {
+        background: rgba(187,241,255,.7);
+    }
+}
+
+/*-------------------------------------*\
+    Implementation
+\*-------------------------------------*/
+
+.highlight { @extend %highlight !optional; }

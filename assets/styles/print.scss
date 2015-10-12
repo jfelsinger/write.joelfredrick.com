@@ -1,0 +1,31 @@
+/*-------------------------------------*\
+    PRINT
+\*-------------------------------------*/
+
+/**
+ * Print
+ * 
+ * All the print styles
+ * 
+ */ 
+ 
+%print__hidden {
+    display: none !important;
+}
+
+    .span-bar,
+    footer,
+    nav,
+    .print__hide,
+    .print__hidden {
+        @extend %print__hidden;
+    }
+
+
+%print__only {
+    display: block !important;
+}
+
+    .print__only {
+        @extend %print__only;
+    }

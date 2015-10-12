@@ -1,0 +1,36 @@
+/*-------------------------------------*\
+    POST TIME
+\*-------------------------------------*/
+
+/**
+ * Post Time 
+ * 
+ **
+ * Base
+ * Isotopes
+ * Implementation
+ * 
+    
+ * 
+ */ 
+ 
+
+%post-time {
+    font-family: $f-ptCap;
+    margin-bottom: unit();
+}
+
+
+
+
+
+/*-------------------------------------*\
+    Implementation
+\*-------------------------------------*/
+
+.post-time { @extend %post-time !optional; }
+
+
+
+
+

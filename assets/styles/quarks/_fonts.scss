@@ -1,0 +1,73 @@
+/*-------------------------------------*\
+    FONTS
+\*-------------------------------------*/
+
+/**
+ * Fonts 
+ * 
+ **
+ * Imports
+ * Stacks
+ * 
+    
+ * 
+ */ 
+
+ 
+/*-------------------------------------*\
+    Imports
+\*-------------------------------------*/
+
+/* Entypo */
+@font-face {
+    font-family: 'entypo';
+    font-style: normal;
+    font-weight: 400;
+    src: url("/assets/fonts/Entypo/entypo.eot");
+    src: local('©'),
+         url("/assets/fonts/Entypo/entypo.woff") format("woff"),
+         url("/assets/fonts/Entypo/entypo.ttf") format("truetype"),
+         url("/assets/fonts/Entypo/entypo.svg#") format("svg");
+}
+
+/** Icons
+ * Font thrown together on icomoon
+ * http://icomoon.io
+ */
+@font-face {
+	font-family: 'icons';
+	src:url('/assets/fonts/icons/icons.eot?s4k30x');
+	src:url('/assets/fonts/icons/icons.eot?#iefixs4k30x') format('embedded-opentype'),
+		url('/assets/fonts/icons/icons.woff?s4k30x') format('woff'),
+		url('/assets/fonts/icons/icons.ttf?s4k30x') format('truetype'),
+		url('/assets/fonts/icons/icons.svg?s4k30x#16sides-icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+
+
+/*-------------------------------------*\
+    Stacks
+\*-------------------------------------*/
+
+$f-openSans: 'Open Sans', 'OpenSans', verdana, sans-serif;
+
+$f-ptSans: 'PT Sans';
+
+$f-ptCap: 'PT Serif Caption', 'PTSerif-Caption';
+
+$f-inconsolata: 'Inconsolata', Inconsolata, Consolas, monospace;
+
+$f-icons: 'icons';
+
+/*---   ---   ---*/
+
+$f-body: $f-openSans;
+ 
+
+
+
+

@@ -1,0 +1,38 @@
+---
+layout: default
+title: Joel Felsinger
+index: true
+---
+
+<section class="posts  wrapper">
+    {% for post in paginator.posts %}
+    <article class="post  post--separated  clear-fix">
+        <header class="clear-fix  listing-header  pt">
+            <a href="{{ post.url }}" class="button-expand  float-right" title="Expand">expand</a>
+            <h2><a href="{{ post.url }}" class="inherit-color">{{ post.title }}</a></h2>
+            <p class="post-time  mb">Posted <time datetime="{{ post.date }}" pubdate>{{ post.date | date_to_string }}</time></p>
+        </header>
+
+        <div class="toggle-slider  toggle-slider--hidden  clear">
+            <a href="{{ post.url }}" class="toggle-slider__overlay" title="Keep on reading">More</a>
+            <div class="post-content  post-content--preview  content-area">
+                <section class="post-preview">
+                    {{ post.excerpt }}
+                </section>
+            </div><!--post-content-->
+        </div>
+    </article>
+    {% endfor %}
+
+    <p class="page-navigation">
+        {% if paginator.previous_page == 1 %}
+        <a href="/" title="View some of my older posts">Older Posts</a>
+        {% elsif paginator.previous_page %}
+        <a href="/page/{{ paginator.previous_page }}" title="View some of my older posts">Older Posts</a>
+        {% endif %}
+
+        {% if paginator.next_page %}
+        <a href="/page/{{ paginator.next_page }}" title="View my more recent posts">Newer Posts</a>
+        {% endif %}
+    </p>
+</section>

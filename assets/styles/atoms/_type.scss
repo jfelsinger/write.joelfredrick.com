@@ -1,0 +1,116 @@
+/*-------------------------------------*\
+    TYPE
+\*-------------------------------------*/
+
+/**
+ * Type 
+ * 
+ * All typographical related elements and styles
+ * 
+ **
+ * Base 
+ * Isotopes
+ * Implementation
+ * 
+    
+ * 
+ */ 
+
+%paragraph {
+    margin-bottom: unit();
+}
+
+%strong {
+    font-weight: bold;
+}
+
+%emphasis {
+    font-style: italic;
+}
+
+%small {
+    @include inuit-font-size(14px);
+}
+
+%hr {
+    margin: 0 unit(3) unit();
+    background: none;
+    border: 1px solid $c-border;
+}
+
+%code {
+    font-family: $f-inconsolata; 
+    background: $c-border;
+}
+
+%subscript {
+}
+
+%superscript {
+}
+
+%blockquote {
+    padding: 0 unit(3) 0 unit(2);
+    border-left: 5px solid $c-blue--light;
+
+    @include breakpoint($gbp-small) {
+        padding: 0 unit(2) 0 unit();
+    }
+}
+
+ 
+
+
+/*-------------------------------------*\
+    Isotopes
+\*-------------------------------------*/
+
+%indented {
+    text-indent: unit(.5);
+}
+
+%smaller {
+    @include inuit-font-size(12px);
+}
+
+
+
+
+
+/*-------------------------------------*\
+    Implementation
+\*-------------------------------------*/
+
+/*
+%content-area p { @extend %paragraph !optional; }
+%content-area strong { @extend %strong !optional; }
+%content-area em { @extend %emphasis !optional; }
+
+%content-area small { @extend %small !optional; }
+
+%content-area hr { @extend %hr !optional; }
+%content-area code { @extend %code !optional; }
+%content-area sub { @extend %subscript !optional; }
+%content-area blockquote { @extend %blockquote !optional; }
+%content-area sup { @extend %superscript !optional; }
+*/
+
+.content-area p { @extend %paragraph !optional; }
+.content-area strong { @extend %strong !optional; }
+.content-area em { @extend %emphasis !optional; }
+
+.content-area small { @extend %small !optional; }
+
+.content-area hr { @extend %hr !optional; }
+.content-area code { @extend %code !optional; }
+.content-area sub { @extend %subscript !optional; }
+.content-area blockquote { @extend %blockquote !optional; }
+.content-area sup { @extend %superscript !optional; }
+
+.smaller { @extend %smaller !optional; }
+.indented { @extend %indented !optional; }
+
+
+
+
+

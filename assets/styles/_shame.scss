@@ -1,0 +1,40 @@
+/*-------------------------------------*\
+    SHAME
+\*-------------------------------------*/
+
+/**
+ * Shame
+ * 
+ * Where all the crappy styles go, the bad ones and the quick ones that you 
+ * don't have time to bother with too much.
+ * 
+    
+ * 
+ */ 
+ 
+
+/**
+ * [Deprecated] Use the inuitcss trumps.spacing module
+ * - github.com/inuitcss/trumps.spacing
+ *
+ * Remove the bottom margin from an element
+ */
+%one-line {
+    margin-bottom: 0;
+}
+    .one-line { @extend %scroll-fix; }
+
+/**
+ * There is probably a better way to go about this,
+ */
+%relative { position: relative; }
+    .relative { @extend %relative; }
+
+/**
+ * Lazy breakpoints for layout items
+ */
+.layout__item {
+    @include breakpoint(max-width $gbp-small) {
+        width: 100% !important;
+    }
+}

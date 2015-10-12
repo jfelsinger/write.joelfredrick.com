@@ -1,0 +1,91 @@
+/*-------------------------------------*\
+    $SKILL LIST
+\*-------------------------------------*/
+
+/**
+ * Skill List
+ *
+ * - Styles
+ * - Implmentation
+ *
+    <ul class="skill-list">
+        <li class="skill-list__item">
+            <span class="skill-list__name">Html</span>
+            <span class="skill-list__rating  ten-twelfths"></span>
+        </li>
+    </ul>
+ *
+ */
+
+
+%skill-list {
+    font-size: .875em;
+    line-height: 1.345;
+    list-style: none;
+}
+
+    %skill-list__item {
+        @extend %clear-fix;
+        position: relative;
+
+        &:before {
+            content: "";
+            width: 100%;
+            height: 2px;
+            display: block;
+            background: $c-border;
+            position: absolute;
+            top: 10px;
+            left: 0;
+            z-index: -1;
+
+            border-radius: 2px;
+        }
+    }
+
+        %skill-list__name {
+            padding-right: .5em;
+            background: $c-body;
+            float: left;
+        }
+
+        %skill-list__rating {
+            height: 2px;
+            text-indent: -9999px;
+            background: $c-blue;
+            display: block;
+            position: absolute;
+            top: 10px;
+            left: 0;
+            z-index: -1;
+
+            border-radius: 2px;
+
+            transition: background 1.2s;
+        }
+
+
+/*-------------------------------------*\
+    Implementation
+\*-------------------------------------*/
+
+.skill-list { @extend %skill-list !optional; }
+
+    .skill-list__item {
+        @extend %skill-list__item !optional;
+
+        &:hover {
+            .skill-list__rating {
+                background: $c-blue--dark;
+            }
+        }
+    }
+
+        .skill-list__name { @extend %skill-list__name !optional; }
+
+        .skill-list__rating { @extend %skill-list__rating !optional; }
+
+
+
+
+

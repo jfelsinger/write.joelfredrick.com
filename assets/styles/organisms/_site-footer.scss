@@ -1,0 +1,34 @@
+/*-------------------------------------*\
+    SITE FOOTER
+\*-------------------------------------*/
+
+/**
+ * Site Footer 
+ * 
+ **
+ * Base
+ * Isotopes
+ * Implementation
+ * 
+    
+ * 
+ */ 
+ 
+
+%site__footer {
+}
+
+    %site__footer__span-bar {
+        line-height: 0;
+    }
+
+
+
+
+
+/*-------------------------------------*\
+    Implementation
+\*-------------------------------------*/
+
+.site__footer { @extend %site__footer !optional; }
+.site__footer__span-bar { @extend %site__footer__span-bar !optional; }

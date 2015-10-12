@@ -1,0 +1,47 @@
+/*-------------------------------------*\
+    SITE HEADER
+\*-------------------------------------*/
+
+/**
+ * Site Header
+ *
+ **
+ * Base
+ * Implementation
+ *
+
+ *
+ */
+
+
+.site__header,
+%site__header {
+    min-height: unit(3);
+    margin-bottom: unit();
+    position: relative;
+}
+
+
+
+
+
+.site__header--small {
+
+    margin-bottom: 0;
+
+    .site__logo__text {
+        @include inuit-font-size(40px);
+    }
+
+    .site__nav {
+        position: static;
+
+        @include inuit-font-size(16px);
+    }
+
+}
+
+
+
+
+

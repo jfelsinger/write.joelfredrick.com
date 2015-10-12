@@ -1,0 +1,45 @@
+/*-------------------------------------*\
+    POST
+\*-------------------------------------*/
+
+/**
+ * Post 
+ * 
+ **
+ * Base
+ * Isotopes
+ * Implementation
+ * 
+    
+ * 
+ */ 
+ 
+%post {
+}
+
+    %post--separated {
+        border-bottom: 2px solid $c-border;
+    }
+
+    %post__footer {
+        padding-top: unit();
+        border-top: 2px solid $c-border;
+    }
+
+
+
+
+
+/*-------------------------------------*\
+    Implementation
+\*-------------------------------------*/
+
+.post { @extend %post !optional; }
+
+    .post--separated { @extend %post--separated !optional; }
+    .post__footer { @extend %post__footer !optional; }
+
+
+
+
+

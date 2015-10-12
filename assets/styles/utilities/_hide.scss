@@ -1,0 +1,49 @@
+/*-------------------------------------*\
+    HIDE
+\*-------------------------------------*/
+
+/**
+ * Hide 
+ * 
+ **
+ * Base
+ * Isotopes
+ * Implementation
+ * 
+    
+ * 
+ */ 
+ 
+
+%hidden {
+    display: none;
+}
+
+
+
+
+
+/*-------------------------------------*\
+    Isotopes
+\*-------------------------------------*/
+
+@include mapbreakpoints('%hide', $gbp, max-width) {
+    display: none;
+}
+
+
+
+
+
+/*-------------------------------------*\
+    Implementation
+\*-------------------------------------*/
+
+.hide,
+.hidden { @extend %hidden !optional; }
+
+@each $bpname, $size in $gbp {
+    .hide--#{$bpname} {
+        @extend %hidden--#{$bpname} !optional;
+    }
+}

@@ -1,0 +1,35 @@
+/*-------------------------------------*\
+    LISTING HEADER
+\*-------------------------------------*/
+
+/**
+ * Listing Header 
+ * 
+ **
+ * Base
+ * Implementation
+ * 
+    
+ * 
+ */ 
+ 
+
+%listing-header {
+    padding-right: unit(4);
+    position: relative;
+}
+
+
+
+
+
+/*-------------------------------------*\
+    Implementation
+\*-------------------------------------*/
+
+.listing-header { @extend %listing-header !optional; }
+
+
+
+
+

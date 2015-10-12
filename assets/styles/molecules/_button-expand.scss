@@ -1,0 +1,74 @@
+/*-------------------------------------*\
+    BUTTON EXPAND
+\*-------------------------------------*/
+
+/**
+ * Button Expand 
+ * 
+ **
+ * Base
+ * Isotopes
+ * Implementation
+ * 
+    
+ * 
+ */ 
+ 
+
+%button-expand {
+    $w: 80px;
+    $h: 60px;
+    text-indent: -9999px; /* Hide the actual text */
+    width: $w;
+    height: $h;
+    background: url('/images/post-buttons--standard.png') no-repeat center center;
+    display: block;
+    position: absolute;
+    top: 60%;
+    top: calc(50% - #{$h}/2);
+    right: 0;
+    z-index: 2;
+
+    transition: background 200ms;
+
+    &:hover,
+    &:focus {
+        background-image: url('/images/post-buttons--hover.png');
+    }
+
+    &:active {
+        background-image: url('/images/post-buttons--active.png');
+    }
+}
+
+
+
+
+
+/*-------------------------------------*\
+    Isotopes
+\*-------------------------------------*/
+
+%button-expand--open {
+    background-image: url('/images/post-buttons--gray.png');
+
+    &:hover,
+    &:focus {
+        background-image: url('/images/post-buttons--active.png');
+    }
+    &:active {
+        background-image: url('/images/post-buttons--hover.png');
+    }
+}
+
+
+
+
+
+/*-------------------------------------*\
+    Isotopes
+\*-------------------------------------*/
+
+.button-expand { @extend %button-expand !optional; }
+.button-expand--open { @extend %button-expand--open !optional; }
+

@@ -1,0 +1,114 @@
+/*-------------------------------------*\
+    HEADINGS
+\*-------------------------------------*/
+
+/**
+ * Headings 
+ * 
+ * 
+ * 
+ **
+ * Base 
+ * Isotopes
+ * Implementation
+ * 
+    
+ * 
+ */ 
+
+%heading {
+    color: $c-post__title;
+    font-family: $f-openSans;
+    font-weight: normal;
+}
+
+    %alpha {
+        @extend %heading !optional;
+
+        @include inuit-font-size(59px);
+
+        font-weight: bold;
+
+        @include breakpoint(max-width $gbp-small) {
+            @include inuit-font-size(42px);
+        }
+    }
+
+    %beta {
+        @extend %heading !optional;
+
+        @include inuit-font-size(42px);
+
+        font-family: $f-ptCap;
+
+        @include breakpoint(max-width $gbp-small) {
+            @include inuit-font-size(37px);
+        }
+    }
+
+    %gamma {
+        @extend %heading !optional;
+
+        @include inuit-font-size(37px);
+
+        color: $c-border--dark;
+        // font-family: $f-ptCap;
+
+        @include breakpoint(max-width $gbp-small) {
+            @include inuit-font-size(26px);
+        }
+    }
+
+    %delta {
+        @extend %heading !optional;
+
+        @include inuit-font-size(26px);
+
+        @include breakpoint(max-width $gbp-small) {
+            @include inuit-font-size(22px);
+        }
+    }
+
+    %epsilon {
+        @extend %heading !optional;
+
+        @include inuit-font-size(22px);
+
+        @include breakpoint(max-width $gbp-small) {
+            @include inuit-font-size(18px);
+        }
+    }
+
+    %zeta {
+        @extend %heading !optional;
+    }
+
+
+
+
+
+/*-------------------------------------*\
+    Isotopes
+\*-------------------------------------*/
+
+
+
+
+
+/*-------------------------------------*\
+    Implementation
+\*-------------------------------------*/
+
+.heading            { @extend %heading !optional; }
+    .alpha, h1      { @extend %alpha !optional; }
+    .beta, h2       { @extend %beta !optional; }
+    .gamma, h3      { @extend %gamma !optional; }
+    .delta, h4      { @extend %delta !optional; }
+    .epsilon, h5    { @extend %epsilon !optional; }
+    .theta, h6      { @extend %theta !optional; }
+
+
+
+
+
+ 

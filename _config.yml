@@ -1,0 +1,13 @@
+name: Joel Fredrick
+paginate: 12
+paginate_path: "/page/:num"
+excerpt_separator: "<!-- ==== -->"
+permalink: /:categories/:title
+exclude:
+    - package.json
+      gulpfile.js
+      node_modules
+      assets/styles
+      .editorconfig
+      .gitignore
+      .jshintrc

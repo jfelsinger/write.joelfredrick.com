@@ -1,0 +1,19 @@
+{
+  "name": "joelfredrick.com",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jfelsinger/joelfredrick.com",
+  "authors": [
+    "Joel Felsinger <jffelsinger@gmail.com>"
+  ],
+  "description": "my site",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}

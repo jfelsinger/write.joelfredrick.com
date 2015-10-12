@@ -1,0 +1,38 @@
+/*-------------------------------------*\
+    INHERIT COLOR
+\*-------------------------------------*/
+
+/**
+ * Inherit Color 
+ * 
+ **
+ * Base
+ * Implementation
+ * 
+    
+ * 
+ */ 
+ 
+
+%inherit-color {
+    &,
+    &:link,
+    &:visited {
+        color: inherit;
+    }
+}
+
+
+
+
+
+/*-------------------------------------*\
+    Implementation
+\*-------------------------------------*/
+
+.inherit-color { @extend %inherit-color !optional; }
+
+
+
+
+

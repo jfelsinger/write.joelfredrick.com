@@ -1,0 +1,48 @@
+/*-------------------------------------*\
+    SITE NAV
+\*-------------------------------------*/
+
+/**
+ * Site Nav 
+ * 
+ **
+ * Base
+ * Implementation
+ * 
+    
+ * 
+ */ 
+ 
+
+%site__nav {
+    @include inuit-font-size(18px);
+    
+    position: absolute;
+    top: unit(2.5);
+    left: unit(3.25);
+
+    text-shadow: 0 1px rgba(0,0,0,.32);
+
+    a {
+        padding: unit(.5) 0;
+
+        &:active,
+        &:focus {
+            color: $c-blue--bright;
+        }
+    }
+
+    @include breakpoint(max-width $gbp-small) {
+        position: static;
+    }
+}
+
+
+
+
+
+/*-------------------------------------*\
+    Implementation
+\*-------------------------------------*/
+
+.site__nav { @extend %site__nav !optional; }

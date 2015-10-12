@@ -1,0 +1,67 @@
+/*-------------------------------------*\
+    TOGGLE SLIDER
+\*-------------------------------------*/
+
+/**
+ * Toggle Slider 
+ * 
+ **
+ * Base
+ * Isotopes
+ * Implementation
+ * 
+    
+ * 
+ */ 
+ 
+
+%toggle-slider {
+    position: relative;
+    max-height: unit(22);
+    overflow: hidden;
+
+    transition: max-height 300ms;
+}
+
+    %toggle-slider--hidden {
+        max-height: 0;
+        display: block;
+    }
+
+    %toggle-slider__overlay {
+        color: #fff;
+        padding: 0 unit();
+        background: $c-blue;
+        position: absolute;
+        bottom: 0;
+        right: unit();
+
+        text-shadow: 0 1px $c-blue--dark;
+
+        transition: background 200ms;
+
+        &:hover,
+        &:active,
+        &:focus {
+            color: #fff;
+            text-decoration: none;
+            background: $c-blue--light;
+        }
+    }
+
+
+
+
+
+/*-------------------------------------*\
+    Implementation
+\*-------------------------------------*/
+
+.toggle-slider { @extend %toggle-slider !optional; }
+.toggle-slider--hidden { @extend %toggle-slider--hidden !optional; }
+.toggle-slider__overlay { @extend %toggle-slider__overlay !optional; }
+
+
+
+
+

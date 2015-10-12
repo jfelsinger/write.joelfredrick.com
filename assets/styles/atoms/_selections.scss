@@ -1,0 +1,48 @@
+/*-------------------------------------*\
+    SELECTIONS
+\*-------------------------------------*/
+
+/**
+ * Selections 
+ * 
+ * 
+ * 
+ **
+ * Base 
+ * Isotopes
+ * Implementation
+ * 
+    
+ * 
+ */ 
+
+%selection {
+    color: $c-selection;
+    background: $c-selection__bg;
+
+    text-shadow: none;
+}
+ 
+
+
+
+
+/*-------------------------------------*\
+    Isotopes
+\*-------------------------------------*/
+
+
+
+
+
+/*-------------------------------------*\
+    Implementation
+\*-------------------------------------*/
+
+::selection { @extend %selection !optional; }
+.selection  { @extend %selection !optional; }
+
+
+
+
+

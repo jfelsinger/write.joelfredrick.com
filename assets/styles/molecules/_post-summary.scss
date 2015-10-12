@@ -1,0 +1,61 @@
+/*-------------------------------------*\
+    POST SUMMARY
+\*-------------------------------------*/
+
+/**
+ * Post Summary 
+ * 
+ **
+ * Base
+ * Isotopes
+ * Implementation
+ * 
+    
+ * 
+ */ 
+ 
+
+%post-summary {
+    border: 1px solid $c-border;
+    background: #f0f0f0;
+}
+
+    %post-summary__list {
+    }
+
+    %post-summary__links {
+        padding: 1em 0;
+        border-bottom: 1px solid $c-border--dark;
+    }
+
+        %post-summary__links--first {
+            padding-top: 0;
+        }
+
+        %post-summary__links--last {
+            padding-bottom: 0;
+            border: none;
+        }
+
+
+
+
+
+/*-------------------------------------*\
+    Implementation
+\*-------------------------------------*/
+
+.post-summary { @extend %post-summary !optional; }
+
+.post-summary__links { @extend %post-summary__links !optional; }
+
+.post-summary__links:first-of-type,
+.post-summary--first { @extend %post-summary__links--first !optional; }
+
+.post-summary__links:last-of-type,
+.post-summary--last { @extend %post-summary__links--last !optional; }
+
+
+
+
+

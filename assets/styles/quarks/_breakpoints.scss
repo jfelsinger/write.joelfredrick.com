@@ -1,0 +1,63 @@
+/*-------------------------------------*\
+    BREAKPOINTS
+\*-------------------------------------*/
+
+/**
+ * Breakpoints 
+ * 
+ * All the global breakpoints for the app
+ * 
+    
+ * 
+ * Global Breakpoints:
+ *  gbp-[name]
+ * 
+ * Local Breakpoints:
+ *  bp-[name]
+ * 
+ */ 
+ 
+
+$gbp-huge:      1080px !global;
+$gbp-large:     960px !global;
+$gbp-medium:    740px !global;
+$gbp-small:     630px !global;
+$gbp-tiny:      480px !global;
+$gbp-micro:     340px !global;
+
+$gbp: (
+    huge:      $gbp-huge,
+    large:     $gbp-large,
+    medium:    $gbp-medium,
+    small:     $gbp-small,
+    tiny:      $gbp-tiny,
+    micro:     $gbp-micro
+) !global;
+
+@mixin mapbreakpoints($name, $breakpoints: $gbp, $bpdirective: '') {
+    @each $bpname, $size in $breakpoints {
+        #{$name}--#{$bpname} {
+            @include breakpoint($bpdirective $size) {
+                @content
+            }
+        }
+    }
+}
+
+
+
+/*---   Inuit Settings   ---*/
+
+$breakpoints: (
+    huge:      "screen and (max-width: "$gbp-huge")",
+    large:     "screen and (max-width: "$gbp-large")",
+    medium:    "screen and (max-width: "$gbp-medium")",
+    small:     "screen and (max-width: "$gbp-small")",
+    tiny:      "screen and (max-width: "$gbp-tiny")",
+    micro:     "screen and (max-width: "$gbp-micro")",
+) !default;
+ 
+
+
+
+

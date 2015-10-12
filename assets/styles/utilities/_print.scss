@@ -1,0 +1,35 @@
+/*-------------------------------------*\
+    PRINT
+\*-------------------------------------*/
+
+/**
+ * Print 
+ * 
+ * Styles regarindg print, but not actually stored
+ * in the print style sheet.
+ *
+ **
+ * Base
+ * Isotopes
+ * Implementation
+ * 
+    
+ * 
+ */ 
+ 
+
+%print__only {
+    @media not print {
+        display: none;
+    }
+}
+
+
+
+
+
+/*-------------------------------------*\
+    Implementation
+\*-------------------------------------*/
+
+.print__only { @extend %print__only !optional; }

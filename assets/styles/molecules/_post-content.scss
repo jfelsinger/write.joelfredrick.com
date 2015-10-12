@@ -1,0 +1,43 @@
+/*-------------------------------------*\
+    POST CONTENT
+\*-------------------------------------*/
+
+/**
+ * Post Content
+ * 
+ **
+ * Base
+ * Isotopes
+ * Implementation
+ * 
+    
+ * 
+ */ 
+
+
+%post-content {
+}
+
+
+
+
+
+/*-------------------------------------*\
+    Isotopes
+\*-------------------------------------*/
+
+%post-content--preview {
+    @extend %slab--gray--light;
+    padding: unit();
+}
+
+
+
+
+
+/*-------------------------------------*\
+    Implementation
+\*-------------------------------------*/
+
+.post-content { @extend %post-content !optional; }
+.post-content--preview { @extend %post-content--preview !optional; }

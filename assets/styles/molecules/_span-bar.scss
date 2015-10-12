@@ -1,0 +1,85 @@
+/*-------------------------------------*\
+    SPAN BAR
+\*-------------------------------------*/
+
+/**
+ * Span Bar 
+ * 
+ **
+ * Base
+ * Isotopes
+ * Implementation
+ * 
+    
+ * 
+ */ 
+ 
+
+%span-bar {
+    margin-bottom: unit();
+    padding: unit() 0;
+    background: #efefef;
+    position: relative;
+
+    &:before,
+    &:after {
+        background: #efefef;
+        content: "";
+        height: 100%;
+        width: 100%;
+        display: block;
+
+        position: absolute;
+        top: 0;
+        left: 100%;
+    }
+    &:before {
+        left: auto;
+        right: 100%;
+    }
+}
+
+
+
+
+
+/*-------------------------------------*\
+    Isotopes
+\*-------------------------------------*/
+
+%span-bar--blue-texture {
+    $bg: url('/images/blue-texture.png') repeat;
+
+    &,
+    &:before,
+    &:after {
+        background: $bg;
+        box-shadow: 0 1px rgba(0,0,0,.1) inset;
+    }
+}
+
+%span-bar--gray-solid {
+    $bg: $c-border;
+
+    &,
+    &:before,
+    &:after {
+        background: $bg;
+    }
+}
+
+
+
+
+
+/*-------------------------------------*\
+    Implementation
+\*-------------------------------------*/
+
+.span-bar { @extend %span-bar !optional; }
+.span-bar--blue-texture { @extend %span-bar--blue-texture !optional; }
+.span-bar--gray-solid { @extend %span-bar--gray-solid !optional; }
+
+
+
+

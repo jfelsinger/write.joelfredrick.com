@@ -1,0 +1,37 @@
+/*-------------------------------------*\
+    MAIN CONTENT
+\*-------------------------------------*/
+
+/**
+ * Main Content 
+ * 
+ **
+ * Base
+ * Implementation
+ * 
+    
+ * 
+ */ 
+ 
+
+%main-content {
+    min-height: 300px;
+    min-height: calc(100vh - (103px + 300px));
+    margin-bottom: unit();
+}
+
+
+
+
+
+/*-------------------------------------*\
+    Implementation
+\*-------------------------------------*/
+
+.mainContent,
+.main-content { @extend %main-content !optional; }
+
+
+
+
+

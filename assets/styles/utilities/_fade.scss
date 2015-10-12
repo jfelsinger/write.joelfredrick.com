@@ -1,0 +1,46 @@
+/*-------------------------------------*\
+    FADE
+\*-------------------------------------*/
+
+/**
+ * Fade 
+ *
+ * Faded, slightly transparent element
+ * 
+ **
+ * Base
+ * Isotopes
+ * Implementation
+ * 
+    
+ * 
+ */ 
+ 
+
+%fade { opacity: .7; }
+
+
+
+
+
+/*-------------------------------------*\
+    Isotopes
+\*-------------------------------------*/
+
+%fade--more { opacity: .5; }
+
+
+
+
+
+/*-------------------------------------*\
+    Implementation
+\*-------------------------------------*/
+
+.fade { @extend %fade !optional; }
+.fade--more { @extend %fade--more !optional; }
+
+
+
+
+
