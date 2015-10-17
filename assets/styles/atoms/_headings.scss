@@ -3,18 +3,18 @@
 \*-------------------------------------*/
 
 /**
- * Headings 
- * 
- * 
- * 
+ * Headings
+ *
+ *
+ *
  **
- * Base 
+ * Base
  * Isotopes
  * Implementation
- * 
-    
- * 
- */ 
+ *
+
+ *
+ */
 
 %heading {
     color: $c-post__title;
@@ -32,6 +32,10 @@
         @include breakpoint(max-width $gbp-small) {
             @include inuit-font-size(42px);
         }
+
+        @include breakpoint(max-width $gbp-tiny) {
+            @include inuit-font-size(37px);
+        }
     }
 
     %beta {
@@ -43,6 +47,10 @@
 
         @include breakpoint(max-width $gbp-small) {
             @include inuit-font-size(37px);
+        }
+
+        @include breakpoint(max-width $gbp-tiny) {
+            @include inuit-font-size(26px);
         }
     }
 
@@ -57,6 +65,10 @@
         @include breakpoint(max-width $gbp-small) {
             @include inuit-font-size(26px);
         }
+
+        @include breakpoint(max-width $gbp-tiny) {
+            @include inuit-font-size(22px);
+        }
     }
 
     %delta {
@@ -67,6 +79,10 @@
         @include breakpoint(max-width $gbp-small) {
             @include inuit-font-size(22px);
         }
+
+        @include breakpoint(max-width $gbp-tiny) {
+            @include inuit-font-size(18px);
+        }
     }
 
     %epsilon {
@@ -76,6 +92,10 @@
 
         @include breakpoint(max-width $gbp-small) {
             @include inuit-font-size(18px);
+        }
+
+        @include breakpoint(max-width $gbp-tiny) {
+            @include inuit-font-size(16px);
         }
     }
 
@@ -111,4 +131,4 @@
 
 
 
- 
+
