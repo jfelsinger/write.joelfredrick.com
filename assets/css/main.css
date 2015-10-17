@@ -778,14 +778,14 @@ ins {
     Settings
 \*-------------------------------------*/
 /**
- *  
- * 
+ *
+ *
  **
  * Base
  * Implementation
- * 
-    
- * 
+ *
+
+ *
  */
 /*-------------------------------------*\
     Implementation
@@ -976,7 +976,7 @@ html {
  */
 .wrapper {
   text-align: left;
-  max-width: 960px;
+  max-width: 900px;
   padding-left: 51.776px;
   padding-right: 51.776px;
   margin-left: auto;
@@ -2551,16 +2551,24 @@ a::selection, .link::selection {
     POST
 \*-------------------------------------*/
 /**
- * Post 
- * 
+ * Post
+ *
  **
  * Base
  * Isotopes
  * Implementation
- * 
-    
- * 
+ *
+
+ *
  */
+.post p {
+  text-indent: 4em;
+  margin-bottom: 0;
+}
+.post p:last-of-type {
+  margin-bottom: 25.888px;
+}
+
 .post--separated {
   border-bottom: 2px solid #e6e6e6;
 }

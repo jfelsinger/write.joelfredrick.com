@@ -3,18 +3,27 @@
 \*-------------------------------------*/
 
 /**
- * Post 
- * 
+ * Post
+ *
  **
  * Base
  * Isotopes
  * Implementation
- * 
-    
- * 
- */ 
- 
+ *
+
+ *
+ */
+
 %post {
+
+    p {
+        text-indent: 4em;
+        margin-bottom: 0;
+
+        &:last-of-type {
+            margin-bottom: unit();
+        }
+    }
 }
 
     %post--separated {
