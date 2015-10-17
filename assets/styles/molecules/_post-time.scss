@@ -18,7 +18,7 @@
 %post-time {
     font-family: $f-ptCap;
     margin-bottom: unit();
-    text-indent: 0;
+    text-indent: 0 !important; // Fix this later
 }
 
 
@@ -29,7 +29,7 @@
     Implementation
 \*-------------------------------------*/
 
-.post-time.post-time { @extend %post-time !optional; }
+.post-time { @extend %post-time !optional; }
 
 
 

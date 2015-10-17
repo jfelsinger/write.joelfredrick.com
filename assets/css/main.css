@@ -2583,7 +2583,7 @@ a::selection, .link::selection {
 .post-time {
   font-family: "PT Serif Caption", "PTSerif-Caption";
   margin-bottom: 25.888px;
-  text-indent: 0;
+  text-indent: 0 !important;
 }
 
 /*-------------------------------------*\
