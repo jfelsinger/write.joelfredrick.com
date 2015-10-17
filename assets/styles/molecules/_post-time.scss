@@ -3,21 +3,22 @@
 \*-------------------------------------*/
 
 /**
- * Post Time 
- * 
+ * Post Time
+ *
  **
  * Base
  * Isotopes
  * Implementation
- * 
-    
- * 
- */ 
- 
+ *
+
+ *
+ */
+
 
 %post-time {
     font-family: $f-ptCap;
     margin-bottom: unit();
+    text-indent: 0;
 }
 
 
@@ -28,7 +29,7 @@
     Implementation
 \*-------------------------------------*/
 
-.post-time { @extend %post-time !optional; }
+.post-time.post-time { @extend %post-time !optional; }
 
 
 

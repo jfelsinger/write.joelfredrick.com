@@ -2570,19 +2570,20 @@ a::selection, .link::selection {
     POST TIME
 \*-------------------------------------*/
 /**
- * Post Time 
- * 
+ * Post Time
+ *
  **
  * Base
  * Isotopes
  * Implementation
- * 
-    
- * 
+ *
+
+ *
  */
 .post-time {
   font-family: "PT Serif Caption", "PTSerif-Caption";
   margin-bottom: 25.888px;
+  text-indent: 0;
 }
 
 /*-------------------------------------*\
