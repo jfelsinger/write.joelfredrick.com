@@ -3,18 +3,18 @@
 \*-------------------------------------*/
 
 /**
- * Wrapper 
- * 
+ * Wrapper
+ *
  * Creates a sort of top-level, site-wide container for keeping the main
  * elements in a site from getting to big.
  **
  * Base
  * Implementation
  *
-    
- * 
- */ 
- 
+
+ *
+ */
+
 
 %wrapper {
     text-align: left;
@@ -24,6 +24,11 @@
     margin-left: auto;
     margin-right: auto;
     // box-sizing: content-box;
+
+    @include breakpoint(max-width $gbp-small) {
+        padding-left: unit(1);
+        padding-right: unit(1);
+    }
 }
 
 

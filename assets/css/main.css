@@ -963,16 +963,16 @@ html {
     WRAPPER
 \*-------------------------------------*/
 /**
- * Wrapper 
- * 
+ * Wrapper
+ *
  * Creates a sort of top-level, site-wide container for keeping the main
  * elements in a site from getting to big.
  **
  * Base
  * Implementation
  *
-    
- * 
+
+ *
  */
 .wrapper {
   text-align: left;
@@ -981,6 +981,12 @@ html {
   padding-right: 51.776px;
   margin-left: auto;
   margin-right: auto;
+}
+@media (max-width: 630px) {
+  .wrapper {
+    padding-left: 25.888px;
+    padding-right: 25.888px;
+  }
 }
 
 /*-------------------------------------*\
