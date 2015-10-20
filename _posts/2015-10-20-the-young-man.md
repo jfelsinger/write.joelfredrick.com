@@ -99,4 +99,8 @@ His stomach growled again. "Enough of that!" he finally said and threw
 off the covers to get dressed. What he was getting ready for he wasn't
 quite sure, but he knew that it would be more than just breakfast.
 
-[Previous: 1. Waking Up](/omnitia/waking-up)
+<div>
+    <a href="/omnitia/waking-up" class="pv-">
+        Previous: 1. Waking Up
+    </a>
+</div>
